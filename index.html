@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <dialog id="favdialog">
+       <form method="=dialog">
+           <label>
+               favourite fast food
+               <select id="sel">
+                   <option id="pizza">pizza</option>
+                   <option id="pasta"> pasta</option>
+
+               </select>
+           </label>
+           <menu>
+               <button id="confirmbtn">cancel</button>
+               <button id="okbtn">ok</button>
+           </menu>
+       </form>
+   </dialog>
+   <center>
+       <button id="showdialog">
+           show dialog
+       </button>
+   </center>
+   <script>
+       document
+       .getElementById('showdialog')
+       .addEventListener('click', ()=>favdialog.showModal());
+        showfood=()=>{
+           /*  var pizza=document.getElementById('pizza');
+            var pasta=document.getElementById('pasta'); */
+            var getvalue=document.getElementById('sle').value;
+            alert(getvalue);
+        }
+    document.getElementById('okbtn').addEventListener("click",showfood);
+   </script>
+</body>
+</html>

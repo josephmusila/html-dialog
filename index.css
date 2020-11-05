@@ -1,0 +1,12 @@
+dialog{
+    border: 1px solid orangered;
+    font-family: sans-serif;
+    color: orangered;
+}
+option{
+    color: orange;
+}
+button{
+    color: red;
+    background-color: grey;
+}
